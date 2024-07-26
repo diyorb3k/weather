@@ -1,0 +1,151 @@
+*{
+ padding: 0;
+ box-sizing: border-box;
+ margin: 0;
+ list-style: none;
+ text-decoration: none;
+font-family: sans-serif;
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.navbar{
+ position: fixed;
+  top: 0; /* Elementni viewport yuqori qismidan 10px masofada joylashtiradi */
+  right: 10px; /* Elementni viewport o'ng qismidan 10px masofada joylashtiradi */
+  width: 100%;; /* Elementning kengligi */
+  height: 100px; /* Elementning balandligi */
+  background-color: rgba(0, 0, 0, 0.8); /* Yengil shaffof qora fon rangi */
+  color: white; /* Matn rangi */
+  padding: 20px; /* Ichki bo'shliq (padding) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soyalar bilan chiroyli effekt */
+  border-radius: 2px; /* Burchaklarni yumaloqlash */
+  z-index: 10000;
+  left: 0;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-between;
+}
+.weather{
+    max-width: 70px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.weatherr{
+    padding-right: 50px;
+}
+
+
+/* MAIN */
+
+.fonemagee {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 10px); 
+    background: url('../assets/pexels-akos-szabo-145938-440731.jpg') center/cover no-repeat;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: auto; 
+}
+.inputname{
+    margin-top: 136px;
+    width: 100%;
+
+    
+}
+.input_search{
+    padding: 10px;
+    outline: none;
+}
+
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 28px;
+    align-items: center !important;
+    position: relative;
+    max-width: 590px;
+    gap: 5px;
+  } 
+  .input {
+    font-size: 18px;
+    max-width: 300px;
+    height: 40px;
+    padding-right:40px !important;
+    line-height: 28px;
+    padding: 0 1rem ;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: 0.3s ease;
+    font-family: sans-serif;
+  }
+  
+  .input::placeholder {
+    color: #9e9ea7;
+  }
+  
+  .input:focus,
+  input:hover {
+    outline: none;
+    border-color: rgba(234, 226, 183, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(67, 125, 66, 0.1);
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .btn {
+    font-size:18px !important;
+    padding:10px;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    /* box-shadow: 0px 0px 60px #1f4c65; */
+    /* -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
+  }
+  
+  .btn:active {
+    scale: 0.92;
+  }
+  
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+  .img_quyos{
+    max-width: 50px;
+  }
+  .spane{
+    display: flex;
+    align-items: center;
+  }
+  span{
+    font-size: 20px;
+  }
